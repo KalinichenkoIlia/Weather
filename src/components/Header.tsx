@@ -1,10 +1,10 @@
 import * as React from "react";
 
-import "../styles/Header.css";
+import styles from "../styles/Header.module.css";
 
 function Header() {
     return(
-        <header>
+        <header className={styles.header}>
             <h1>Weather</h1>
         </header>
     )

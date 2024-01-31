@@ -1,10 +1,10 @@
 import * as React from "react";
 import ApiForecast from "./ApiForecast";
-import "../styles/Main.css"
+import styles from "../styles/Main.module.css"
 
 function Main() {
     return(
-        <main>
+        <main className={styles.main}>
            <ApiForecast/>
         </main>
     );

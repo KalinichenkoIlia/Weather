@@ -5,7 +5,7 @@ import {COORDS} from "./data";
 import {organizeData} from "./utils";
 import Weather from "./Weather";
 import Select from "./Select";
-import '../styles/ApiForecast.css'
+import styles from '../styles/ApiForecast.module.css'
 
 function ApiForecast() {
     const [weather, getWeather] = useState<any>([]);
@@ -26,7 +26,7 @@ function ApiForecast() {
         });
     }, [selected, click]);
     return (
-        <div className={'forecast'}>
+        <div className={styles.forecast}>
             <Weather weather={weather}/>
             <Select getClick={getClick} getSelectedCity={getSelectedCity}/>
         </div>

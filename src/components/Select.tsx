@@ -1,14 +1,13 @@
 import * as React from "react";
 import {useState} from "react";
-import "../styles/Select.css"
-import Form from 'react-bootstrap/Form';
-import {Button} from "react-bootstrap";
+import styles from "../styles/Select.module.css"
+
 
 
 function Select(props) {
     const [change, changeClick] = useState(false);
     return (
-        <div className={'weather_select'}>
+        <div className={styles.weatherSelect}>
             <select  onChange={(e) => props.getSelectedCity(e.target.value)}>
                 <option value={'Moscow'}>Москва</option>
                 <option value={'Vladivostok'}>Владивосток</option>

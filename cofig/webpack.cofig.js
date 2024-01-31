@@ -2,8 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ForkTsCheckerNotifierWebpackPlugin = require('fork-ts-checker-notifier-webpack-plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
-
-
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
     entry: path.resolve(process.cwd(), './src/index.tsx'),
     output: {
@@ -21,12 +20,26 @@ module.exports = {
                 use: {loader: "ts-loader"},
             },
             {
-                test:/\.css$/,
-                use: ["style-loader", "css-loader"]
+                test: /\.css$/,
+                use: [
+                    {
+                        loader: MiniCssExtractPlugin.loader
+                    },
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            importLoaders: 1,
+                            modules: {
+                                localIdentName: '[local]___[hash:base64:5]'
+                            }
+                        }
+                    }
+                ]
             }
         ]
     },
     plugins: [
+        new MiniCssExtractPlugin(),
         new ForkTsCheckerWebpackPlugin(),
         new ForkTsCheckerNotifierWebpackPlugin({
             title: 'TypeScript',
