@@ -1,6 +1,6 @@
 import * as React from "react";
 import ApiForecast from "./ApiForecast";
-import styles from "../styles/Main.module.css"
+import styles from "../styles/Main.module.scss"
 
 function Main() {
     return(

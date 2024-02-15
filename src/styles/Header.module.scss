@@ -1,0 +1,10 @@
+@import "base/variables.color";
+
+.header {
+    height: 70px;
+    color: $base-color-header;
+    background: $base-background-header;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}

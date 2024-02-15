@@ -5,7 +5,7 @@ import {COORDS} from "./data";
 import {organizeData} from "./utils";
 import Weather from "./Weather";
 import Select from "./Select";
-import styles from '../styles/ApiForecast.module.css'
+import styles from '../styles/ApiForecast.module.scss'
 
 function ApiForecast() {
     const [weather, getWeather] = useState<any>([]);

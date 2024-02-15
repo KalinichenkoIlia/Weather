@@ -1,0 +1,23 @@
+@import "./base/variables.color";
+
+.grid_wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px) ;
+    grid-template-rows: auto;
+    justify-content: center;
+    grid-gap: 2vw;
+    .dateBlock {
+        display: flex;
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid #7fffd4;
+        .time {
+            width: min-content;
+            border: 2px solid aquamarine;
+        }
+    }
+
+}
+
+

@@ -1,0 +1,56 @@
+.src-styles-Header-module__header___sD062 {
+    height: 70px;
+    color: #fff;
+    background: #155252;
+    display: grid;
+    justify-content: center;
+    align-items: center
+}
+
+.src-styles-Weather-module__grid_wrapper___wCqLF {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, 200px);
+    grid-template-rows:auto;
+    justify-content: center;
+    grid-gap: 2vw
+}
+
+.src-styles-Weather-module__grid_wrapper___wCqLF .src-styles-Weather-module__dateBlock___PXfLD {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #7fffd4
+}
+
+.src-styles-Weather-module__grid_wrapper___wCqLF .src-styles-Weather-module__dateBlock___PXfLD .src-styles-Weather-module__time___9sAs_ {
+    width: min-content;
+    border: 2px solid #7fffd4
+}
+
+.src-styles-Select-module__weatherSelect___xZjTi select {
+    background-color: #1ee1e1;
+    height: 35px;
+    width: 200px;
+    border: 3px solid;
+    border-radius: 3px
+}
+
+.src-styles-Select-module__weatherSelect___xZjTi button {
+    height: 35px;
+    border: 3px solid;
+    border-radius: 3px;
+    background-color: #1ee1e1
+}
+
+.src-styles-ApiForecast-module__forecast___QZbjg {
+    width: 80%;
+    margin: 0 auto;
+    color: #000;
+    background-color: beige
+}
+
+.src-styles-Main-module__main___x3nRL {
+    display: flex;
+    justify-content: center
+}

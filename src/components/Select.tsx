@@ -1,6 +1,6 @@
 import * as React from "react";
 import {useState} from "react";
-import styles from "../styles/Select.module.css"
+import styles from "../styles/Select.module.scss"
 
 
 
